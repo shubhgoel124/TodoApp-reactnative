@@ -3,7 +3,7 @@ import { Platform } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 // In React Native, localhost from Android emulator is 10.0.2.2
-const baseURL = Platform.OS === 'android' ? 'http://10.0.2.2:5000' : 'http://localhost:5000';
+const baseURL = Platform.OS === 'android' ? 'http://10.0.2.2:5000' : 'https://todo-app-reactnative.vercel.app/';
 
 const api = axios.create({
   baseURL
